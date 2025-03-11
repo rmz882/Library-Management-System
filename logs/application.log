@@ -1,0 +1,458 @@
+2025-03-11T01:07:09.009+02:00  INFO 7216 --- [Management] [main] c.l.Management.ManagementApplication     : Starting ManagementApplication using Java 23.0.2 with PID 7216 (C:\Users\TUF GAMING\Desktop\Management\target\classes started by TUF GAMING in C:\Users\TUF GAMING\Desktop\Management)
+2025-03-11T01:07:09.013+02:00 DEBUG 7216 --- [Management] [main] c.l.Management.ManagementApplication     : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-11T01:07:09.016+02:00  INFO 7216 --- [Management] [main] c.l.Management.ManagementApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-03-11T01:07:10.493+02:00  INFO 7216 --- [Management] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-11T01:07:10.613+02:00  INFO 7216 --- [Management] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 104 ms. Found 3 JPA repository interfaces.
+2025-03-11T01:07:11.831+02:00  INFO 7216 --- [Management] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-11T01:07:11.858+02:00  INFO 7216 --- [Management] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-11T01:07:11.858+02:00  INFO 7216 --- [Management] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-11T01:07:11.978+02:00  INFO 7216 --- [Management] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-11T01:07:11.979+02:00  INFO 7216 --- [Management] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2846 ms
+2025-03-11T01:07:12.262+02:00  INFO 7216 --- [Management] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-11T01:07:12.342+02:00  INFO 7216 --- [Management] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-11T01:07:12.410+02:00  INFO 7216 --- [Management] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-11T01:07:12.879+02:00  INFO 7216 --- [Management] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-11T01:07:12.927+02:00  INFO 7216 --- [Management] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-11T01:07:13.244+02:00  INFO 7216 --- [Management] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3a3316b6
+2025-03-11T01:07:13.249+02:00  INFO 7216 --- [Management] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-11T01:07:13.310+02:00  WARN 7216 --- [Management] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-11T01:07:13.315+02:00  WARN 7216 --- [Management] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-03-11T01:07:13.367+02:00  INFO 7216 --- [Management] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-11T01:07:14.669+02:00  INFO 7216 --- [Management] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-11T01:07:14.779+02:00  INFO 7216 --- [Management] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-11T01:07:15.453+02:00  WARN 7216 --- [Management] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-11T01:07:15.679+02:00  INFO 7216 --- [Management] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-03-11T01:07:16.555+02:00  INFO 7216 --- [Management] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-11T01:07:16.571+02:00  INFO 7216 --- [Management] [main] c.l.Management.ManagementApplication     : Started ManagementApplication in 8.619 seconds (process running for 9.602)
+2025-03-11T01:07:49.155+02:00  INFO 7216 --- [Management] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-11T01:07:49.156+02:00  INFO 7216 --- [Management] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-11T01:07:49.157+02:00  INFO 7216 --- [Management] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-03-11T01:07:49.489+02:00  INFO 7216 --- [Management] [http-nio-8080-exec-2] c.l.Management.Aspects.LoggingAspect     : Entering method: addBook with arguments: [com.library.Management.Entities.Book@17419fb0]
+2025-03-11T01:07:49.632+02:00  INFO 7216 --- [Management] [http-nio-8080-exec-2] c.l.Management.Aspects.LoggingAspect     : Exiting method: addBook with result: com.library.Management.Entities.Book@17419fb0. Execution time: 142 ms
+2025-03-11T01:19:35.836+02:00  INFO 7216 --- [Management] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-11T01:19:35.846+02:00  INFO 7216 --- [Management] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-11T01:19:35.851+02:00  INFO 7216 --- [Management] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-11T01:19:35.855+02:00  INFO 7216 --- [Management] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-11T01:19:35.866+02:00  INFO 7216 --- [Management] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-11T01:19:38.732+02:00  INFO 7952 --- [Management] [main] c.l.Management.ManagementApplication     : Starting ManagementApplication using Java 23.0.2 with PID 7952 (C:\Users\TUF GAMING\Desktop\Management\target\classes started by TUF GAMING in C:\Users\TUF GAMING\Desktop\Management)
+2025-03-11T01:19:38.736+02:00 DEBUG 7952 --- [Management] [main] c.l.Management.ManagementApplication     : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-11T01:19:38.738+02:00  INFO 7952 --- [Management] [main] c.l.Management.ManagementApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-03-11T01:19:40.227+02:00  INFO 7952 --- [Management] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-11T01:19:40.363+02:00  INFO 7952 --- [Management] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 111 ms. Found 3 JPA repository interfaces.
+2025-03-11T01:19:41.843+02:00  INFO 7952 --- [Management] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-11T01:19:41.869+02:00  INFO 7952 --- [Management] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-11T01:19:41.870+02:00  INFO 7952 --- [Management] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-11T01:19:41.979+02:00  INFO 7952 --- [Management] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-11T01:19:41.979+02:00  INFO 7952 --- [Management] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3122 ms
+2025-03-11T01:19:42.329+02:00  INFO 7952 --- [Management] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-11T01:19:42.406+02:00  INFO 7952 --- [Management] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-11T01:19:42.466+02:00  INFO 7952 --- [Management] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-11T01:19:42.929+02:00  INFO 7952 --- [Management] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-11T01:19:42.984+02:00  INFO 7952 --- [Management] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-11T01:19:43.339+02:00  INFO 7952 --- [Management] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@55881f40
+2025-03-11T01:19:43.343+02:00  INFO 7952 --- [Management] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-11T01:19:43.388+02:00  WARN 7952 --- [Management] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-11T01:19:43.391+02:00  WARN 7952 --- [Management] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-03-11T01:19:43.434+02:00  INFO 7952 --- [Management] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-11T01:19:44.798+02:00  INFO 7952 --- [Management] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-11T01:19:44.943+02:00  INFO 7952 --- [Management] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-11T01:19:46.015+02:00  WARN 7952 --- [Management] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-11T01:19:46.293+02:00  INFO 7952 --- [Management] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-03-11T01:19:47.339+02:00  INFO 7952 --- [Management] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-11T01:19:47.355+02:00  INFO 7952 --- [Management] [main] c.l.Management.ManagementApplication     : Started ManagementApplication in 9.779 seconds (process running for 10.788)
+2025-03-11T01:19:57.330+02:00  INFO 7952 --- [Management] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-11T01:19:57.330+02:00  INFO 7952 --- [Management] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-11T01:19:57.332+02:00  INFO 7952 --- [Management] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-03-11T01:19:57.578+02:00  INFO 7952 --- [Management] [http-nio-8080-exec-2] c.l.Management.Aspects.LoggingAspect     : Entering method: getAllPatrons with arguments: []
+2025-03-11T01:19:57.710+02:00  INFO 7952 --- [Management] [http-nio-8080-exec-2] c.l.Management.Aspects.LoggingAspect     : Exiting method: getAllPatrons with result: [com.library.Management.Entities.Patron@494cc78c, com.library.Management.Entities.Patron@3ce2bf56, com.library.Management.Entities.Patron@2139078a]
+2025-03-11T01:19:57.711+02:00  INFO 7952 --- [Management] [http-nio-8080-exec-2] c.l.Management.Aspects.LoggingAspect     : Method: getAllPatrons executed in 134 ms
+2025-03-11T01:20:29.877+02:00  INFO 7952 --- [Management] [http-nio-8080-exec-3] c.l.Management.Aspects.LoggingAspect     : Entering method: addBook with arguments: [com.library.Management.Entities.Book@5729673e]
+2025-03-11T01:20:29.987+02:00  INFO 7952 --- [Management] [http-nio-8080-exec-3] c.l.Management.Aspects.LoggingAspect     : Exiting method: addBook with result: com.library.Management.Entities.Book@5729673e
+2025-03-11T01:20:29.988+02:00  INFO 7952 --- [Management] [http-nio-8080-exec-3] c.l.Management.Aspects.LoggingAspect     : Method: addBook executed in 111 ms
+2025-03-11T01:34:03.623+02:00  INFO 7952 --- [Management] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-11T01:34:03.632+02:00  INFO 7952 --- [Management] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-11T01:34:03.636+02:00  INFO 7952 --- [Management] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-11T01:34:03.641+02:00  INFO 7952 --- [Management] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-11T01:34:03.660+02:00  INFO 7952 --- [Management] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-11T01:34:10.757+02:00  INFO 14484 --- [Management] [main] c.l.Management.ManagementApplication     : Starting ManagementApplication using Java 23.0.2 with PID 14484 (C:\Users\TUF GAMING\Desktop\Management\target\classes started by TUF GAMING in C:\Users\TUF GAMING\Desktop\Management)
+2025-03-11T01:34:10.761+02:00 DEBUG 14484 --- [Management] [main] c.l.Management.ManagementApplication     : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-11T01:34:10.763+02:00  INFO 14484 --- [Management] [main] c.l.Management.ManagementApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-03-11T01:34:12.317+02:00  INFO 14484 --- [Management] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-11T01:34:12.457+02:00  INFO 14484 --- [Management] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 122 ms. Found 3 JPA repository interfaces.
+2025-03-11T01:34:14.198+02:00  INFO 14484 --- [Management] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-11T01:34:14.227+02:00  INFO 14484 --- [Management] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-11T01:34:14.228+02:00  INFO 14484 --- [Management] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-11T01:34:14.339+02:00  INFO 14484 --- [Management] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-11T01:34:14.340+02:00  INFO 14484 --- [Management] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3452 ms
+2025-03-11T01:34:14.497+02:00  WARN 14484 --- [Management] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: 'entityManagerFactory' depends on missing bean 'cacheManager'
+2025-03-11T01:34:14.504+02:00  INFO 14484 --- [Management] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2025-03-11T01:34:14.539+02:00  INFO 14484 --- [Management] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-03-11T01:34:14.573+02:00 ERROR 14484 --- [Management] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+A component required a bean named 'cacheManager' that could not be found.
+
+
+Action:
+
+Consider defining a bean named 'cacheManager' in your configuration.
+
+2025-03-11T01:35:12.776+02:00  INFO 18124 --- [Management] [main] c.l.Management.ManagementApplication     : Starting ManagementApplication using Java 23.0.2 with PID 18124 (C:\Users\TUF GAMING\Desktop\Management\target\classes started by TUF GAMING in C:\Users\TUF GAMING\Desktop\Management)
+2025-03-11T01:35:12.779+02:00 DEBUG 18124 --- [Management] [main] c.l.Management.ManagementApplication     : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-11T01:35:12.781+02:00  INFO 18124 --- [Management] [main] c.l.Management.ManagementApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-03-11T01:35:14.417+02:00  INFO 18124 --- [Management] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-11T01:35:14.542+02:00  INFO 18124 --- [Management] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 110 ms. Found 3 JPA repository interfaces.
+2025-03-11T01:35:16.332+02:00  INFO 18124 --- [Management] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-11T01:35:16.359+02:00  INFO 18124 --- [Management] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-11T01:35:16.360+02:00  INFO 18124 --- [Management] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-11T01:35:16.490+02:00  INFO 18124 --- [Management] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-11T01:35:16.491+02:00  INFO 18124 --- [Management] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3593 ms
+2025-03-11T01:35:16.831+02:00  INFO 18124 --- [Management] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-11T01:35:16.913+02:00  INFO 18124 --- [Management] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-11T01:35:16.968+02:00  INFO 18124 --- [Management] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-11T01:35:17.500+02:00  INFO 18124 --- [Management] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-11T01:35:17.554+02:00  INFO 18124 --- [Management] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-11T01:35:17.982+02:00  INFO 18124 --- [Management] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6dd38df2
+2025-03-11T01:35:17.986+02:00  INFO 18124 --- [Management] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-11T01:35:18.023+02:00  WARN 18124 --- [Management] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-11T01:35:18.025+02:00  WARN 18124 --- [Management] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-03-11T01:35:18.058+02:00  INFO 18124 --- [Management] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-11T01:35:19.427+02:00  INFO 18124 --- [Management] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-11T01:35:19.589+02:00  INFO 18124 --- [Management] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-11T01:35:20.759+02:00  WARN 18124 --- [Management] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-11T01:35:21.076+02:00  INFO 18124 --- [Management] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-03-11T01:35:22.470+02:00  INFO 18124 --- [Management] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-11T01:35:22.486+02:00  INFO 18124 --- [Management] [main] c.l.Management.ManagementApplication     : Started ManagementApplication in 10.857 seconds (process running for 11.851)
+2025-03-11T01:35:26.279+02:00  INFO 18124 --- [Management] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-11T01:35:26.279+02:00  INFO 18124 --- [Management] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-11T01:35:26.280+02:00  INFO 18124 --- [Management] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-03-11T01:35:26.505+02:00  INFO 18124 --- [Management] [http-nio-8080-exec-1] c.l.Management.Aspects.LoggingAspect     : Entering method: getAllPatrons with arguments: []
+2025-03-11T01:35:26.654+02:00  INFO 18124 --- [Management] [http-nio-8080-exec-1] c.l.Management.Aspects.LoggingAspect     : Exiting method: getAllPatrons with result: [com.library.Management.Entities.Patron@24b30cd4, com.library.Management.Entities.Patron@26c448a8, com.library.Management.Entities.Patron@4460346a]
+2025-03-11T01:35:26.654+02:00  INFO 18124 --- [Management] [http-nio-8080-exec-1] c.l.Management.Aspects.LoggingAspect     : Method: getAllPatrons executed in 150 ms
+2025-03-11T01:39:57.446+02:00  INFO 18124 --- [Management] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-11T01:39:57.455+02:00  INFO 18124 --- [Management] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-11T01:39:57.461+02:00  INFO 18124 --- [Management] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-11T01:39:57.464+02:00  INFO 18124 --- [Management] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-11T01:39:57.477+02:00  INFO 18124 --- [Management] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-11T01:40:02.148+02:00  INFO 11468 --- [Management] [main] c.l.Management.ManagementApplication     : Starting ManagementApplication using Java 23.0.2 with PID 11468 (C:\Users\TUF GAMING\Desktop\Management\target\classes started by TUF GAMING in C:\Users\TUF GAMING\Desktop\Management)
+2025-03-11T01:40:02.151+02:00 DEBUG 11468 --- [Management] [main] c.l.Management.ManagementApplication     : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-11T01:40:02.153+02:00  INFO 11468 --- [Management] [main] c.l.Management.ManagementApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-03-11T01:40:03.915+02:00  INFO 11468 --- [Management] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-11T01:40:04.074+02:00  INFO 11468 --- [Management] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 133 ms. Found 3 JPA repository interfaces.
+2025-03-11T01:40:05.641+02:00  INFO 11468 --- [Management] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-11T01:40:05.667+02:00  INFO 11468 --- [Management] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-11T01:40:05.668+02:00  INFO 11468 --- [Management] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-11T01:40:05.793+02:00  INFO 11468 --- [Management] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-11T01:40:05.794+02:00  INFO 11468 --- [Management] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3502 ms
+2025-03-11T01:40:06.239+02:00  INFO 11468 --- [Management] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-11T01:40:06.348+02:00  INFO 11468 --- [Management] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-11T01:40:06.415+02:00  INFO 11468 --- [Management] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-11T01:40:06.972+02:00  INFO 11468 --- [Management] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-11T01:40:07.024+02:00  INFO 11468 --- [Management] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-11T01:40:07.324+02:00  INFO 11468 --- [Management] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@79d14037
+2025-03-11T01:40:07.328+02:00  INFO 11468 --- [Management] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-11T01:40:07.366+02:00  WARN 11468 --- [Management] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-11T01:40:07.368+02:00  WARN 11468 --- [Management] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-03-11T01:40:07.400+02:00  INFO 11468 --- [Management] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-11T01:40:08.679+02:00  INFO 11468 --- [Management] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-11T01:40:08.797+02:00  INFO 11468 --- [Management] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-11T01:40:09.825+02:00  WARN 11468 --- [Management] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-11T01:40:10.063+02:00  INFO 11468 --- [Management] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-03-11T01:40:11.206+02:00  INFO 11468 --- [Management] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-11T01:40:11.219+02:00  INFO 11468 --- [Management] [main] c.l.Management.ManagementApplication     : Started ManagementApplication in 10.168 seconds (process running for 11.223)
+2025-03-11T01:40:16.783+02:00  INFO 11468 --- [Management] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-11T01:40:16.783+02:00  INFO 11468 --- [Management] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-11T01:40:16.785+02:00  INFO 11468 --- [Management] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-03-11T01:40:17.014+02:00  INFO 11468 --- [Management] [http-nio-8080-exec-1] c.l.Management.Aspects.LoggingAspect     : Entering method: getAllPatrons with arguments: []
+2025-03-11T01:40:17.191+02:00  INFO 11468 --- [Management] [http-nio-8080-exec-1] c.l.Management.Aspects.LoggingAspect     : Exiting method: getAllPatrons with result: [com.library.Management.Entities.Patron@73286cd8, com.library.Management.Entities.Patron@31ef51b1, com.library.Management.Entities.Patron@5ca3115a]
+2025-03-11T01:40:17.191+02:00  INFO 11468 --- [Management] [http-nio-8080-exec-1] c.l.Management.Aspects.LoggingAspect     : Method: getAllPatrons executed in 179 ms
+2025-03-11T01:40:54.480+02:00  INFO 11468 --- [Management] [http-nio-8080-exec-3] c.l.Management.Aspects.LoggingAspect     : Entering method: addBook with arguments: [com.library.Management.Entities.Book@22cd66fd]
+2025-03-11T01:40:54.582+02:00  INFO 11468 --- [Management] [http-nio-8080-exec-3] c.l.Management.Aspects.LoggingAspect     : Exiting method: addBook with result: com.library.Management.Entities.Book@22cd66fd
+2025-03-11T01:40:54.583+02:00  INFO 11468 --- [Management] [http-nio-8080-exec-3] c.l.Management.Aspects.LoggingAspect     : Method: addBook executed in 103 ms
+2025-03-11T02:06:37.150+02:00  INFO 11468 --- [Management] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-11T02:06:37.160+02:00  INFO 11468 --- [Management] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-11T02:06:37.164+02:00  INFO 11468 --- [Management] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-11T02:06:37.167+02:00  INFO 11468 --- [Management] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-11T02:06:37.180+02:00  INFO 11468 --- [Management] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-11T02:06:41.558+02:00  INFO 18896 --- [Management] [main] c.l.Management.ManagementApplication     : Starting ManagementApplication using Java 23.0.2 with PID 18896 (C:\Users\TUF GAMING\Desktop\Management\target\classes started by TUF GAMING in C:\Users\TUF GAMING\Desktop\Management)
+2025-03-11T02:06:41.564+02:00 DEBUG 18896 --- [Management] [main] c.l.Management.ManagementApplication     : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-11T02:06:41.566+02:00  INFO 18896 --- [Management] [main] c.l.Management.ManagementApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-03-11T02:06:42.897+02:00  INFO 18896 --- [Management] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-11T02:06:43.020+02:00  INFO 18896 --- [Management] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 107 ms. Found 3 JPA repository interfaces.
+2025-03-11T02:06:44.381+02:00  INFO 18896 --- [Management] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-11T02:06:44.410+02:00  INFO 18896 --- [Management] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-11T02:06:44.411+02:00  INFO 18896 --- [Management] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-11T02:06:44.507+02:00  INFO 18896 --- [Management] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-11T02:06:44.508+02:00  INFO 18896 --- [Management] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2821 ms
+2025-03-11T02:06:44.873+02:00  INFO 18896 --- [Management] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-11T02:06:44.959+02:00  INFO 18896 --- [Management] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-11T02:06:45.014+02:00  INFO 18896 --- [Management] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-11T02:06:45.470+02:00  INFO 18896 --- [Management] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-11T02:06:45.522+02:00  INFO 18896 --- [Management] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-11T02:06:45.800+02:00  INFO 18896 --- [Management] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@14239223
+2025-03-11T02:06:45.804+02:00  INFO 18896 --- [Management] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-11T02:06:45.835+02:00  WARN 18896 --- [Management] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-11T02:06:45.837+02:00  WARN 18896 --- [Management] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-03-11T02:06:45.873+02:00  INFO 18896 --- [Management] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-11T02:06:47.080+02:00  INFO 18896 --- [Management] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-11T02:06:47.198+02:00  INFO 18896 --- [Management] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-11T02:06:48.165+02:00  WARN 18896 --- [Management] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-11T02:06:48.366+02:00  INFO 18896 --- [Management] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-03-11T02:06:49.439+02:00  INFO 18896 --- [Management] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-11T02:06:49.451+02:00  INFO 18896 --- [Management] [main] c.l.Management.ManagementApplication     : Started ManagementApplication in 8.873 seconds (process running for 9.871)
+2025-03-11T02:07:02.446+02:00  INFO 18896 --- [Management] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-11T02:07:02.447+02:00  INFO 18896 --- [Management] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-11T02:07:02.448+02:00  INFO 18896 --- [Management] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-03-11T02:07:02.723+02:00  INFO 18896 --- [Management] [http-nio-8080-exec-2] c.l.Management.Aspects.LoggingAspect     : Entering method: getAllPatrons with arguments: []
+2025-03-11T02:07:02.922+02:00  INFO 18896 --- [Management] [http-nio-8080-exec-2] c.l.Management.Aspects.LoggingAspect     : Exiting method: getAllPatrons with result: [com.library.Management.Entities.Patron@cc58a8f, com.library.Management.Entities.Patron@50f5e84f, com.library.Management.Entities.Patron@6448ff71]
+2025-03-11T02:07:02.922+02:00  INFO 18896 --- [Management] [http-nio-8080-exec-2] c.l.Management.Aspects.LoggingAspect     : Method: getAllPatrons executed in 200 ms
+2025-03-11T02:12:15.238+02:00  INFO 18896 --- [Management] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-11T02:12:15.249+02:00  INFO 18896 --- [Management] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-11T02:12:15.255+02:00  INFO 18896 --- [Management] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-11T02:12:15.259+02:00  INFO 18896 --- [Management] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-11T02:12:15.271+02:00  INFO 18896 --- [Management] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-11T02:12:17.969+02:00 ERROR 11580 --- [Management] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Failed to bind properties under 'logging.level.org.springframework.transaction' to org.springframework.boot.logging.LogLevel:
+
+    Property: logging.level.org.springframework.transaction
+    Value: "DEBUG # Enable transaction logging"
+    Origin: class path resource [application.properties] - 24:47
+    Reason: failed to convert java.lang.String to org.springframework.boot.logging.LogLevel (caused by java.lang.IllegalArgumentException: No enum constant org.springframework.boot.logging.LogLevel.DEBUG # Enable transaction logging)
+
+Action:
+
+Update your application's configuration. The following values are valid:
+
+    DEBUG
+    ERROR
+    FATAL
+    INFO
+    OFF
+    TRACE
+    WARN
+
+2025-03-11T02:13:14.835+02:00  INFO 11932 --- [Management] [main] c.l.Management.ManagementApplication     : Starting ManagementApplication using Java 23.0.2 with PID 11932 (C:\Users\TUF GAMING\Desktop\Management\target\classes started by TUF GAMING in C:\Users\TUF GAMING\Desktop\Management)
+2025-03-11T02:13:14.839+02:00 DEBUG 11932 --- [Management] [main] c.l.Management.ManagementApplication     : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-11T02:13:14.841+02:00  INFO 11932 --- [Management] [main] c.l.Management.ManagementApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-03-11T02:13:16.377+02:00  INFO 11932 --- [Management] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-11T02:13:16.477+02:00  INFO 11932 --- [Management] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 81 ms. Found 3 JPA repository interfaces.
+2025-03-11T02:13:17.723+02:00  INFO 11932 --- [Management] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-11T02:13:17.746+02:00  INFO 11932 --- [Management] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-11T02:13:17.746+02:00  INFO 11932 --- [Management] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-11T02:13:17.833+02:00  INFO 11932 --- [Management] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-11T02:13:17.833+02:00  INFO 11932 --- [Management] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2857 ms
+2025-03-11T02:13:18.220+02:00  INFO 11932 --- [Management] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-11T02:13:18.312+02:00  INFO 11932 --- [Management] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-11T02:13:18.374+02:00  INFO 11932 --- [Management] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-11T02:13:18.839+02:00  INFO 11932 --- [Management] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-11T02:13:18.886+02:00  INFO 11932 --- [Management] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-11T02:13:19.157+02:00  INFO 11932 --- [Management] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@254e9709
+2025-03-11T02:13:19.159+02:00  INFO 11932 --- [Management] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-11T02:13:19.182+02:00  WARN 11932 --- [Management] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-11T02:13:19.184+02:00  WARN 11932 --- [Management] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-03-11T02:13:19.220+02:00  INFO 11932 --- [Management] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-11T02:13:20.242+02:00  INFO 11932 --- [Management] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-11T02:13:20.338+02:00  INFO 11932 --- [Management] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-11T02:13:21.291+02:00  WARN 11932 --- [Management] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-11T02:13:21.523+02:00  INFO 11932 --- [Management] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-03-11T02:13:22.596+02:00  INFO 11932 --- [Management] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-11T02:13:22.609+02:00  INFO 11932 --- [Management] [main] c.l.Management.ManagementApplication     : Started ManagementApplication in 8.785 seconds (process running for 9.574)
+2025-03-11T02:16:23.455+02:00  INFO 11932 --- [Management] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-11T02:16:23.455+02:00  INFO 11932 --- [Management] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-11T02:16:23.458+02:00  INFO 11932 --- [Management] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-03-11T02:16:23.742+02:00  INFO 11932 --- [Management] [http-nio-8080-exec-2] c.l.Management.Aspects.LoggingAspect     : Entering method: getAllPatrons with arguments: []
+2025-03-11T02:16:23.955+02:00  INFO 11932 --- [Management] [http-nio-8080-exec-2] c.l.Management.Aspects.LoggingAspect     : Exiting method: getAllPatrons with result: [com.library.Management.Entities.Patron@150dbb98, com.library.Management.Entities.Patron@53e52217, com.library.Management.Entities.Patron@67ef2ccc]
+2025-03-11T02:16:23.956+02:00  INFO 11932 --- [Management] [http-nio-8080-exec-2] c.l.Management.Aspects.LoggingAspect     : Method: getAllPatrons executed in 216 ms
+2025-03-11T02:18:39.394+02:00  INFO 11932 --- [Management] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-11T02:18:39.406+02:00  INFO 11932 --- [Management] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-11T02:18:39.411+02:00  INFO 11932 --- [Management] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-11T02:18:39.416+02:00  INFO 11932 --- [Management] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-11T02:18:39.429+02:00  INFO 11932 --- [Management] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-11T02:18:42.339+02:00  INFO 18384 --- [Management] [main] c.l.Management.ManagementApplication     : Starting ManagementApplication using Java 23.0.2 with PID 18384 (C:\Users\TUF GAMING\Desktop\Management\target\classes started by TUF GAMING in C:\Users\TUF GAMING\Desktop\Management)
+2025-03-11T02:18:42.342+02:00 DEBUG 18384 --- [Management] [main] c.l.Management.ManagementApplication     : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-11T02:18:42.345+02:00  INFO 18384 --- [Management] [main] c.l.Management.ManagementApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-03-11T02:18:43.889+02:00  INFO 18384 --- [Management] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-11T02:18:44.003+02:00  INFO 18384 --- [Management] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 97 ms. Found 3 JPA repository interfaces.
+2025-03-11T02:18:45.526+02:00  INFO 18384 --- [Management] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-11T02:18:45.554+02:00  INFO 18384 --- [Management] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-11T02:18:45.555+02:00  INFO 18384 --- [Management] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-11T02:18:45.685+02:00  INFO 18384 --- [Management] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-11T02:18:45.686+02:00  INFO 18384 --- [Management] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3202 ms
+2025-03-11T02:18:46.097+02:00  INFO 18384 --- [Management] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-11T02:18:46.188+02:00  INFO 18384 --- [Management] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-11T02:18:46.267+02:00  INFO 18384 --- [Management] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-11T02:18:46.934+02:00  INFO 18384 --- [Management] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-11T02:18:46.980+02:00  INFO 18384 --- [Management] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-11T02:18:47.371+02:00  INFO 18384 --- [Management] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@194224ca
+2025-03-11T02:18:47.378+02:00  INFO 18384 --- [Management] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-11T02:18:47.428+02:00  WARN 18384 --- [Management] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-11T02:18:47.432+02:00  WARN 18384 --- [Management] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-03-11T02:18:47.526+02:00  INFO 18384 --- [Management] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-11T02:18:49.350+02:00  INFO 18384 --- [Management] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-11T02:18:49.487+02:00  INFO 18384 --- [Management] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-11T02:18:50.436+02:00  WARN 18384 --- [Management] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-11T02:18:50.672+02:00  INFO 18384 --- [Management] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-03-11T02:18:51.835+02:00  INFO 18384 --- [Management] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-11T02:18:51.850+02:00  INFO 18384 --- [Management] [main] c.l.Management.ManagementApplication     : Started ManagementApplication in 10.438 seconds (process running for 11.268)
+2025-03-11T02:18:59.529+02:00  INFO 18384 --- [Management] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-11T02:18:59.529+02:00  INFO 18384 --- [Management] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-11T02:18:59.532+02:00  INFO 18384 --- [Management] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-03-11T02:18:59.850+02:00  INFO 18384 --- [Management] [http-nio-8080-exec-2] c.l.Management.Aspects.LoggingAspect     : Entering method: getAllPatrons with arguments: []
+2025-03-11T02:19:00.033+02:00  INFO 18384 --- [Management] [http-nio-8080-exec-2] c.l.Management.Aspects.LoggingAspect     : Exiting method: getAllPatrons with result: [com.library.Management.Entities.Patron@2de91a07, com.library.Management.Entities.Patron@7782c18, com.library.Management.Entities.Patron@619f8c40]
+2025-03-11T02:19:00.034+02:00  INFO 18384 --- [Management] [http-nio-8080-exec-2] c.l.Management.Aspects.LoggingAspect     : Method: getAllPatrons executed in 185 ms
+2025-03-11T02:19:35.081+02:00  INFO 18384 --- [Management] [http-nio-8080-exec-3] c.l.Management.Aspects.LoggingAspect     : Entering method: getAllBooks with arguments: []
+2025-03-11T02:19:35.090+02:00  INFO 18384 --- [Management] [http-nio-8080-exec-3] c.l.Management.Aspects.LoggingAspect     : Exiting method: getAllBooks with result: [com.library.Management.Entities.Book@8c071d3, com.library.Management.Entities.Book@32db35a5, com.library.Management.Entities.Book@61a4d139, com.library.Management.Entities.Book@3a797a36, com.library.Management.Entities.Book@313cda43, com.library.Management.Entities.Book@5aa1b7dc, com.library.Management.Entities.Book@1d4b98a8, com.library.Management.Entities.Book@6c12f9fd, com.library.Management.Entities.Book@3b2bc8fe, com.library.Management.Entities.Book@6ce38710, com.library.Management.Entities.Book@2d2cccfc, com.library.Management.Entities.Book@568a15b5, com.library.Management.Entities.Book@33835ba2]
+2025-03-11T02:19:35.090+02:00  INFO 18384 --- [Management] [http-nio-8080-exec-3] c.l.Management.Aspects.LoggingAspect     : Method: getAllBooks executed in 9 ms
+2025-03-11T02:22:46.139+02:00  INFO 18384 --- [Management] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-11T02:22:46.148+02:00  INFO 18384 --- [Management] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-11T02:22:46.153+02:00  INFO 18384 --- [Management] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-11T02:22:46.158+02:00  INFO 18384 --- [Management] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-11T02:22:46.174+02:00  INFO 18384 --- [Management] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-11T02:22:48.941+02:00  INFO 17336 --- [Management] [main] c.l.Management.ManagementApplication     : Starting ManagementApplication using Java 23.0.2 with PID 17336 (C:\Users\TUF GAMING\Desktop\Management\target\classes started by TUF GAMING in C:\Users\TUF GAMING\Desktop\Management)
+2025-03-11T02:22:48.944+02:00  INFO 17336 --- [Management] [main] c.l.Management.ManagementApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-03-11T02:22:50.402+02:00  INFO 17336 --- [Management] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-11T02:22:50.486+02:00  INFO 17336 --- [Management] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 3 JPA repository interfaces.
+2025-03-11T02:22:51.857+02:00  INFO 17336 --- [Management] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-11T02:22:51.879+02:00  INFO 17336 --- [Management] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-11T02:22:51.879+02:00  INFO 17336 --- [Management] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-11T02:22:51.983+02:00  INFO 17336 --- [Management] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-11T02:22:51.984+02:00  INFO 17336 --- [Management] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2914 ms
+2025-03-11T02:22:52.429+02:00  INFO 17336 --- [Management] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-11T02:22:52.502+02:00  INFO 17336 --- [Management] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-11T02:22:52.553+02:00  INFO 17336 --- [Management] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-11T02:22:53.138+02:00  INFO 17336 --- [Management] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-11T02:22:53.206+02:00  INFO 17336 --- [Management] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-11T02:22:53.530+02:00  INFO 17336 --- [Management] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@3de56885
+2025-03-11T02:22:53.534+02:00  INFO 17336 --- [Management] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-11T02:22:53.581+02:00  WARN 17336 --- [Management] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-11T02:22:53.583+02:00  WARN 17336 --- [Management] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-03-11T02:22:53.616+02:00  INFO 17336 --- [Management] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-11T02:22:55.077+02:00  INFO 17336 --- [Management] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-11T02:22:55.275+02:00  INFO 17336 --- [Management] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-11T02:22:56.279+02:00  WARN 17336 --- [Management] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-11T02:22:56.493+02:00  INFO 17336 --- [Management] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-03-11T02:22:57.760+02:00  INFO 17336 --- [Management] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-11T02:22:57.780+02:00  INFO 17336 --- [Management] [main] c.l.Management.ManagementApplication     : Started ManagementApplication in 9.732 seconds (process running for 10.483)
+2025-03-11T02:23:03.313+02:00  INFO 17336 --- [Management] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-11T02:23:03.313+02:00  INFO 17336 --- [Management] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-11T02:23:03.315+02:00  INFO 17336 --- [Management] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2025-03-11T02:23:03.630+02:00  INFO 17336 --- [Management] [http-nio-8080-exec-1] c.l.Management.Aspects.LoggingAspect     : Entering method: getAllBooks with arguments: []
+2025-03-11T02:23:03.826+02:00  INFO 17336 --- [Management] [http-nio-8080-exec-1] c.l.Management.Aspects.LoggingAspect     : Exiting method: getAllBooks with result: [com.library.Management.Entities.Book@53b5356a, com.library.Management.Entities.Book@5a28ab50, com.library.Management.Entities.Book@6679f9a5, com.library.Management.Entities.Book@5154c3bd, com.library.Management.Entities.Book@67754f05, com.library.Management.Entities.Book@78981a90, com.library.Management.Entities.Book@518560f7, com.library.Management.Entities.Book@263b0851, com.library.Management.Entities.Book@6bfb76f4, com.library.Management.Entities.Book@538fad81, com.library.Management.Entities.Book@2977fddf, com.library.Management.Entities.Book@57700120, com.library.Management.Entities.Book@678c91ec]
+2025-03-11T02:23:03.826+02:00  INFO 17336 --- [Management] [http-nio-8080-exec-1] c.l.Management.Aspects.LoggingAspect     : Method: getAllBooks executed in 198 ms
+2025-03-11T02:39:12.129+02:00  INFO 17336 --- [Management] [http-nio-8080-exec-3] c.l.Management.Aspects.LoggingAspect     : Entering method: addBook with arguments: [com.library.Management.Entities.Book@358bf0f9]
+2025-03-11T02:39:12.223+02:00  INFO 17336 --- [Management] [http-nio-8080-exec-3] c.l.Management.Aspects.LoggingAspect     : Exiting method: addBook with result: com.library.Management.Entities.Book@358bf0f9
+2025-03-11T02:39:12.223+02:00  INFO 17336 --- [Management] [http-nio-8080-exec-3] c.l.Management.Aspects.LoggingAspect     : Method: addBook executed in 94 ms
+2025-03-11T04:48:17.849+02:00  INFO 17336 --- [Management] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-03-11T04:48:17.858+02:00  INFO 17336 --- [Management] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-03-11T04:48:17.864+02:00  INFO 17336 --- [Management] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-11T04:48:17.868+02:00  INFO 17336 --- [Management] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-11T04:48:17.873+02:00  INFO 17336 --- [Management] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-11T04:51:28.571+02:00  INFO 16228 --- [Management] [main] c.l.Management.ManagementApplication     : Starting ManagementApplication using Java 23.0.2 with PID 16228 (C:\Users\TUF GAMING\Desktop\Management\target\classes started by TUF GAMING in C:\Users\TUF GAMING\Desktop\Management)
+2025-03-11T04:51:28.575+02:00 DEBUG 16228 --- [Management] [main] c.l.Management.ManagementApplication     : Running with Spring Boot v3.4.3, Spring v6.2.3
+2025-03-11T04:51:28.577+02:00  INFO 16228 --- [Management] [main] c.l.Management.ManagementApplication     : No active profile set, falling back to 1 default profile: "default"
+2025-03-11T04:51:30.350+02:00  INFO 16228 --- [Management] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-11T04:51:30.515+02:00  INFO 16228 --- [Management] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 136 ms. Found 3 JPA repository interfaces.
+2025-03-11T04:51:31.960+02:00  INFO 16228 --- [Management] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-11T04:51:31.988+02:00  INFO 16228 --- [Management] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-11T04:51:31.988+02:00  INFO 16228 --- [Management] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.36]
+2025-03-11T04:51:32.094+02:00  INFO 16228 --- [Management] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-11T04:51:32.095+02:00  INFO 16228 --- [Management] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3381 ms
+2025-03-11T04:51:32.546+02:00  INFO 16228 --- [Management] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-11T04:51:32.678+02:00  INFO 16228 --- [Management] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.8.Final
+2025-03-11T04:51:32.879+02:00  INFO 16228 --- [Management] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-11T04:51:33.577+02:00  INFO 16228 --- [Management] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-11T04:51:33.631+02:00  INFO 16228 --- [Management] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-11T04:51:33.904+02:00  INFO 16228 --- [Management] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1c171746
+2025-03-11T04:51:33.906+02:00  INFO 16228 --- [Management] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-11T04:51:33.944+02:00  WARN 16228 --- [Management] [main] org.hibernate.orm.deprecation            : HHH90000025: MySQL8Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-03-11T04:51:33.946+02:00  WARN 16228 --- [Management] [main] org.hibernate.orm.deprecation            : HHH90000026: MySQL8Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2025-03-11T04:51:33.973+02:00  INFO 16228 --- [Management] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-03-11T04:51:35.556+02:00  INFO 16228 --- [Management] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-11T04:51:35.676+02:00  INFO 16228 --- [Management] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-11T04:51:36.740+02:00  WARN 16228 --- [Management] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-11T04:51:36.925+02:00  INFO 16228 --- [Management] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsService
+2025-03-11T04:51:37.963+02:00  INFO 16228 --- [Management] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-11T04:51:37.975+02:00  INFO 16228 --- [Management] [main] c.l.Management.ManagementApplication     : Started ManagementApplication in 10.597 seconds (process running for 11.616)
+2025-03-11T04:52:59.320+02:00  INFO 16228 --- [Management] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-11T04:52:59.320+02:00  INFO 16228 --- [Management] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-11T04:52:59.322+02:00  INFO 16228 --- [Management] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-03-11T04:52:59.637+02:00  INFO 16228 --- [Management] [http-nio-8080-exec-2] c.l.Management.Aspects.LoggingAspect     : Entering method: getAllBooks with arguments: []
+2025-03-11T04:52:59.878+02:00  INFO 16228 --- [Management] [http-nio-8080-exec-2] c.l.Management.Aspects.LoggingAspect     : Exiting method: getAllBooks with result: [com.library.Management.Entities.Book@619f8c40, com.library.Management.Entities.Book@105e538e, com.library.Management.Entities.Book@12dc0cca, com.library.Management.Entities.Book@51ef08a5, com.library.Management.Entities.Book@13da4a60, com.library.Management.Entities.Book@71fab9b6, com.library.Management.Entities.Book@3b2511f, com.library.Management.Entities.Book@2ab1cbec, com.library.Management.Entities.Book@6b790d90, com.library.Management.Entities.Book@4fea3e40, com.library.Management.Entities.Book@5ec1b40b, com.library.Management.Entities.Book@7a8bea94, com.library.Management.Entities.Book@593d7dd8, com.library.Management.Entities.Book@47bb4081]
+2025-03-11T04:52:59.879+02:00  INFO 16228 --- [Management] [http-nio-8080-exec-2] c.l.Management.Aspects.LoggingAspect     : Method: getAllBooks executed in 244 ms
